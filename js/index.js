@@ -47,6 +47,26 @@ for (let i = 0; i < links.length; i++) {
   links[i].classList.add(`nav-item-${i + 1}`);
   links[i].textContent = siteContent["nav"][`nav-item-${i + 1}`];
 }
+  // Nav appendChild() and prepend()
+
+  const project = document.createElement('a');
+  project.textContent = "Project"
+  project.setAttribute('href', '#')
+  
+  const home = document.createElement('a');
+  home.textContent = "Home"
+  home.setAttribute('href', '#')
+
+  const navSection = document.querySelector('nav');
+  navSection.appendChild(project)
+  navSection.prepend(home)
+  
+  // Nav color change
+
+  const navColor = document.querySelectorAll('a');
+  navColor.forEach(element => { element.style.color = 'green' })
+
+
 
 // Heading
 
