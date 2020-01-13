@@ -61,37 +61,59 @@ mainImg.setAttribute('src', siteContent["cta"]["img-src"])
 
 // Main Content Headings
 
-// feature
+    // feature
 
-document.querySelector('.main-content').getElementsByTagName('h4')[0].textContent = siteContent['main-content']['features-h4'];
-// about
+    document.querySelector('.main-content').getElementsByTagName('h4')[0].textContent = siteContent['main-content']['features-h4'];
+    // about
 
-document.querySelector('.main-content').getElementsByTagName('h4')[1].textContent = siteContent['main-content']['about-h4'];
-// services
+    document.querySelector('.main-content').getElementsByTagName('h4')[1].textContent = siteContent['main-content']['about-h4'];
+    // services
 
-document.querySelector('.main-content').getElementsByTagName('h4')[2].textContent = siteContent['main-content']['services-h4'];
-// product
+    document.querySelector('.main-content').getElementsByTagName('h4')[2].textContent = siteContent['main-content']['services-h4'];
+    // product
 
-document.querySelector('.main-content').getElementsByTagName('h4')[3].textContent = siteContent['main-content']['product-h4'];
-// vision
+    document.querySelector('.main-content').getElementsByTagName('h4')[3].textContent = siteContent['main-content']['product-h4'];
+    // vision
 
-document.querySelector('.main-content').getElementsByTagName('h4')[4].textContent = siteContent['main-content']['vision-h4'];
+    document.querySelector('.main-content').getElementsByTagName('h4')[4].textContent = siteContent['main-content']['vision-h4'];
 
 // Main Content Info
 
-// feature
+    // feature
 
-document.querySelector('.main-content').getElementsByTagName('p')[0].textContent = siteContent['main-content']['features-content'];
-// about
+    document.querySelector('.main-content').getElementsByTagName('p')[0].textContent = siteContent['main-content']['features-content'];
+    // about
 
-document.querySelector('.main-content').getElementsByTagName('p')[1].textContent = siteContent['main-content']['about-content'];
-// services
+    document.querySelector('.main-content').getElementsByTagName('p')[1].textContent = siteContent['main-content']['about-content'];
+    // services
 
-document.querySelector('.main-content').getElementsByTagName('p')[2].textContent = siteContent['main-content']['services-content'];
-// product
+    document.querySelector('.main-content').getElementsByTagName('p')[2].textContent = siteContent['main-content']['services-content'];
+    // product
 
-document.querySelector('.main-content').getElementsByTagName('p')[3].textContent = siteContent['main-content']['product-content'];
-// vision
+    document.querySelector('.main-content').getElementsByTagName('p')[3].textContent = siteContent['main-content']['product-content'];
+    // vision
 
-document.querySelector('.main-content').getElementsByTagName('p')[4].textContent = siteContent['main-content']['vision-content'];
+    document.querySelector('.main-content').getElementsByTagName('p')[4].textContent = siteContent['main-content']['vision-content'];
 
+    // Main Content Img
+
+    const middleImg = document.querySelector('.middle-img');
+    middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+// Contact Content
+
+    // contact heading
+    document.querySelector('.contact h4').textContent = siteContent['contact']['contact-h4'];
+
+    // address
+    document.querySelector('.contact').getElementsByTagName('p')[0].textContent = siteContent['contact']['address'];
+    // phone
+
+    document.querySelector('.contact').getElementsByTagName('p')[1].textContent = siteContent['contact']['phone'];
+    // email
+
+    document.querySelector('.contact').getElementsByTagName('p')[2].textContent = siteContent['contact']['email'];
+
+// Footer Content
+
+    document.querySelector('footer p').textContent = siteContent['footer']['copyright']
