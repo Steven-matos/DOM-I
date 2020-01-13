@@ -40,3 +40,58 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// Nav 
+const links = document.querySelectorAll('a');
+for (let i = 0; i < links.length; i++) {
+  links[i].classList.add(`nav-item-${i + 1}`);
+  links[i].textContent = siteContent["nav"][`nav-item-${i + 1}`];
+}
+
+// Heading
+
+const topContent = document.querySelector('h1');
+topContent.textContent = siteContent["cta"]["h1"]
+
+const getStartedBtn = document.querySelector('button');
+getStartedBtn.textContent = siteContent["cta"]["button"]
+
+const mainImg = document.querySelector('#cta-img');
+mainImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+// Main Content Headings
+
+// feature
+
+document.querySelector('.main-content').getElementsByTagName('h4')[0].textContent = siteContent['main-content']['features-h4'];
+// about
+
+document.querySelector('.main-content').getElementsByTagName('h4')[1].textContent = siteContent['main-content']['about-h4'];
+// services
+
+document.querySelector('.main-content').getElementsByTagName('h4')[2].textContent = siteContent['main-content']['services-h4'];
+// product
+
+document.querySelector('.main-content').getElementsByTagName('h4')[3].textContent = siteContent['main-content']['product-h4'];
+// vision
+
+document.querySelector('.main-content').getElementsByTagName('h4')[4].textContent = siteContent['main-content']['vision-h4'];
+
+// Main Content Info
+
+// feature
+
+document.querySelector('.main-content').getElementsByTagName('p')[0].textContent = siteContent['main-content']['features-content'];
+// about
+
+document.querySelector('.main-content').getElementsByTagName('p')[1].textContent = siteContent['main-content']['about-content'];
+// services
+
+document.querySelector('.main-content').getElementsByTagName('p')[2].textContent = siteContent['main-content']['services-content'];
+// product
+
+document.querySelector('.main-content').getElementsByTagName('p')[3].textContent = siteContent['main-content']['product-content'];
+// vision
+
+document.querySelector('.main-content').getElementsByTagName('p')[4].textContent = siteContent['main-content']['vision-content'];
+
