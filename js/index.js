@@ -40,3 +40,100 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// Nav 
+const links = document.querySelectorAll('a');
+for (let i = 0; i < links.length; i++) {
+  links[i].classList.add(`nav-item-${i + 1}`);
+  links[i].textContent = siteContent["nav"][`nav-item-${i + 1}`];
+}
+  // Nav appendChild() and prepend()
+
+  const project = document.createElement('a');
+  project.textContent = "Project"
+  project.setAttribute('href', '#')
+  
+  const home = document.createElement('a');
+  home.textContent = "Home"
+  home.setAttribute('href', '#')
+
+  const navSection = document.querySelector('nav');
+  navSection.appendChild(project)
+  navSection.prepend(home)
+  
+  // Nav color change
+
+  const navColor = document.querySelectorAll('a');
+  navColor.forEach(element => { element.style.color = 'green' })
+
+
+
+// Heading
+
+const topContent = document.querySelector('h1');
+topContent.textContent = siteContent["cta"]["h1"]
+
+const getStartedBtn = document.querySelector('button');
+getStartedBtn.textContent = siteContent["cta"]["button"]
+
+const mainImg = document.querySelector('#cta-img');
+mainImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+// Main Content Headings
+
+    // feature
+
+    document.querySelector('.main-content').getElementsByTagName('h4')[0].textContent = siteContent['main-content']['features-h4'];
+    // about
+
+    document.querySelector('.main-content').getElementsByTagName('h4')[1].textContent = siteContent['main-content']['about-h4'];
+    // services
+
+    document.querySelector('.main-content').getElementsByTagName('h4')[2].textContent = siteContent['main-content']['services-h4'];
+    // product
+
+    document.querySelector('.main-content').getElementsByTagName('h4')[3].textContent = siteContent['main-content']['product-h4'];
+    // vision
+
+    document.querySelector('.main-content').getElementsByTagName('h4')[4].textContent = siteContent['main-content']['vision-h4'];
+
+// Main Content Info
+
+    // feature
+
+    document.querySelector('.main-content').getElementsByTagName('p')[0].textContent = siteContent['main-content']['features-content'];
+    // about
+
+    document.querySelector('.main-content').getElementsByTagName('p')[1].textContent = siteContent['main-content']['about-content'];
+    // services
+
+    document.querySelector('.main-content').getElementsByTagName('p')[2].textContent = siteContent['main-content']['services-content'];
+    // product
+
+    document.querySelector('.main-content').getElementsByTagName('p')[3].textContent = siteContent['main-content']['product-content'];
+    // vision
+
+    document.querySelector('.main-content').getElementsByTagName('p')[4].textContent = siteContent['main-content']['vision-content'];
+
+    // Main Content Img
+
+    const middleImg = document.querySelector('.middle-img');
+    middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+// Contact Content
+
+    // contact heading
+    document.querySelector('.contact h4').textContent = siteContent['contact']['contact-h4'];
+
+    // address
+    document.querySelector('.contact').getElementsByTagName('p')[0].textContent = siteContent['contact']['address'];
+    // phone
+
+    document.querySelector('.contact').getElementsByTagName('p')[1].textContent = siteContent['contact']['phone'];
+    // email
+
+    document.querySelector('.contact').getElementsByTagName('p')[2].textContent = siteContent['contact']['email'];
+
+// Footer Content
+
+    document.querySelector('footer p').textContent = siteContent['footer']['copyright']
